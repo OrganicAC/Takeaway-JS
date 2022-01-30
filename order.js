@@ -9,8 +9,9 @@ class Order {
     this.basket = []; 
   }
 
-  addItem(dish) {
-    this.basket.push(dish);
+  addItem(item, amount) {
+    let dishObject = {item, amount}
+    this.basket.push(dishObject);
   }
 
   getBasket() {
