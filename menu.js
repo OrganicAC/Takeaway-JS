@@ -1,10 +1,6 @@
 class Menu {
   constructor(dish) {
-    this.dish = [
-      { item: 'Nigiri', price: 2.99 },
-      { item: 'Sashimi', price: 4.99 },
-      { item: 'Hosomaki', price: 1.99 }
-    ];
+    this.dish = { 'Nigiri': 2.99, 'Sashimi': 4.99, 'Hosomaki': 1.99 };
   }
   
   getDish() {

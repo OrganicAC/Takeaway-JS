@@ -1,8 +1,5 @@
-// As a customer
-// So that I can order the meal I want
-// I would like to be able to select some number of several available dishes
-
 const Menu = require('./menu');
+const menu = new Menu;
 
 class Order {
   constructor() {
@@ -16,6 +13,20 @@ class Order {
 
   getBasket() {
     return this.basket
+  }
+
+  getTotal() {
+    let total = 0;
+    for(let i = 0; i < this.basket.length; i++){
+      total += (this.basket[i]['amount'] * menu.dish[this.basket[i]['item']]);
+    
+    };
+      return total.toFixed(2);
+    
+  }
+
+  showSummary() {
+    console.log('Total: £' + this.getTotal());
   }
 }
 
