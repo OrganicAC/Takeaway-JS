@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/OrganicAC/Takeaway-JS#readme",
   "dependencies": {
-    "jest": "^27.4.7"
+    "dotenv": "^15.0.0",
+    "jest": "^27.4.7",
+    "twilio": "^3.73.1"
   },
   "devDependencies": {
     "eslint": "^8.8.0"
