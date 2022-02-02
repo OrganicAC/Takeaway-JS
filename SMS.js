@@ -5,7 +5,6 @@ process.env.authToken
 process.env.from
 process.env.to 
 
-
 class Text {
   constructor(accountSid, authToken, from, to) {
     this.accountSid = accountSid
